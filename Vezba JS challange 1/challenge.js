@@ -76,7 +76,7 @@ function finalMessage([yourScore, computerScore]) {
       'paper': document.getElementById('paper').src,
       'scissors': document.getElementById('scissors').src
     }
-
+      
     // let's remove all the images
     document.getElementById('rock').remove();
     document.getElementById('paper').remove();
@@ -96,8 +96,8 @@ function finalMessage([yourScore, computerScore]) {
   
     document.getElementById('flex-box-rps-div').appendChild(humanDiv);
     document.getElementById('flex-box-rps-div').appendChild(botDiv);
-    document.getElementById('flex-box-rps-div').appendChild(messageDiv);
-
+    document.getElementById('flex-box-rps-div').appendChild(messageDiv);}
+  
     //Challenge 4: Change The Color of All Buttons
     var all_buttons = document.getElementsByTagName('button');
     console.log(all_buttons);
@@ -107,4 +107,3 @@ function finalMessage([yourScore, computerScore]) {
       copyAllButtons.push(all_buttons[i]);
     }
     console.log(copyAllButtons);
-   }
