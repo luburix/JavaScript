@@ -100,9 +100,24 @@ function finalMessage([yourScore, computerScore]) {
   
     //Challenge 4: Change The Color of All Buttons
     var all_buttons = document.getElementsByTagName('button');
-    
+
     var copyAllButtons = []; 
     for (let i=0; i < all_buttons.length; i++) {
-      copyAllButtons.push(all_buttons[i]);
+      copyAllButtons.push(all_buttons[i].classList[1]);
     }
-    
+
+    console.log(copyAllButtons);
+
+    function buttonColorChange(buttonThingy) {
+    if (buttonThingy.value === 'red') {
+      buttonsRed();
+    } else if (buttonThingy.value === 'green') {
+      buttonsGreen();
+    } else if (buttonThingy.value === 'reset') {
+      buttonsReset();
+    } else if (buttonThingy.value === 'random') {
+        buttonsRandom();
+    }
+  }
+
+ 
